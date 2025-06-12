@@ -1,535 +1,1332 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Liping Li</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/vendor.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script defer src="js/fontawesome/all.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
-</head>
-
-<body id="top">
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="s-header__content">
-    
-            <nav class="s-header__nav-wrap">
-                <ul class="s-header__nav">
-                    <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
-                    <li><a class="smoothscroll" href="#about" title="About">About</a></li>
-                    <li><a class="smoothscroll" href="#services" title="Services">Works</a></li>
-                    <li><a class="smoothscroll" href="#portfolio" title="Works">Portfolio</a></li>
-                </ul>
-            </nav> <!-- end s-header__nav-wrap -->
-
-        </div> <!-- end header-content -->
-
-        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- hero
-    ================================================== -->
-    <section id="hero" class="s-hero target-section">
-
-        <div class="s-hero__bg">
-            <div class="gradient-overlay"></div>
-        </div>
-
-        <div class="row s-hero__content">
-            <div class="column">
-
-                <h1>Hello.</h1>
-                <div class="s-hero__content-about">
-
-                    <p>
-                    I love building business with customer;<br>
-                    Cross-functional coordination;<br>
-                    Technical  (PS,AI,AI tools,PPT,EXCEL);<br>
-                    Multitasking in fast-paced trading environments.
-
-                    </p>
-    
-                   
-                </div>
-
-            </div>
-        </div>
-
-       
-
-        <div class="s-hero__scroll">
-            <a href="#about" class="s-hero__scroll-link smoothscroll">
-                Scroll Down
-            </a>
-        </div>
-
-    </section> <!-- end s-hero -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about">
-
-        <div class="horizontal-line"></div>
-
-        <div class="row">
-            <div class="column large-12">
-
-                <div class="section-title" data-num="01" data-aos="fade-up">
-                    <h3 class="h6">Who am I</h3>
-                </div>
-
-            </div>
-
-            <div class="column large-6 w-900-stack s-about__intro-text">
-                <h1 class="display-1" data-aos="fade-up">
-                    I am May,9 years of work experience | Look for a job as a Foreign trade salesperson | Expected salary: 8-10K | Expected city: Ningbo
-                </h1>
-
-                <p class="lead" data-aos="fade-up">
-                    More attentive and patient, able to drive, willing to endure hardship, not afraid of not having weekends, willing to learn new knowledge.
-                </p>
-            </div>
-
-            <div class="column large-6 w-900-stack s-about__photo-block">
-                <div class="s-about__photo" data-aos="fade-up"></div>
-            </div>
-        </div>
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services">
-
-        <div class="row">
-            <div class="column large-12">
-                <div class="section-title" data-num="02" data-aos="fade-up">
-                    <h3 class="h6">May Experience</h3>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Driven - Product Catalog</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#FFB800',
+                            secondary: '#FFE082',
+                            dark: '#333333',
+                            light: '#F9F9F9',
+                        },
+                        fontFamily: {
+                            inter: ['Inter', 'system-ui', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+            .sidebar-item-active {
+                @apply bg-primary/20 border-r-4 border-primary text-dark font-medium;
+            }
+            .image-zoom {
+                @apply transition-transform duration-300 hover:scale-105;
+            }
+        }
+    </style>
+    </head>
+    <body class="bg-gray-50 font-inter text-dark min-h-screen flex flex-col">
+        <!-- Simplified Header -->
+        <header class="bg-white shadow-sm sticky top-0 z-10">
+            <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <i class="fa fa-campground text-primary text-2xl"></i>
+                    <h1 class="text-xl md:text-2xl font-bold text-dark">Driven's Catalogue</h1>
                 </div>
             </div>
-            <div class="column large-6 w-900-stack">
-                <h1 class="display-1" data-aos="fade-up">
-                    I have learned a lot from my boss in one year of foreign trade work experience, and currently my career plan focuses more on developing customers.
-                </h1>
-            </div>
-            <div class="column large-6 w-900-stack">
-                <p class="lead" data-aos="fade-up">
-               The requirements of foreign trade work for myself, exploring more efficient means to promote business development; Methods for researching customer backgrounds.
-                </p>
-            </div>
-        </div>
-        <div class="row block-large-1-2 block-tab-full s-about__process item-list">
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Assisted boss</h3>
-                <p>
-                Assisted boss in daily operations including supplier sourcing, quotation preparation, and packaging solutions (packaging design, prototype production). Make  shipping marks, barcodes, labels, and documentation.</br>
-                Supporting boss in LC (Letter of Credit) review and original B/L verification.</br>
-                Assisted boss handled customer communications (email correspondence, complaint resolution) and maintained quality assurance records.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Technical</h3>
-                <p>
-                
-               Product presentation materials: sample packaging,  photography/editing, and marketing PPTs.</br>
-               Enhanced technical capabilities through SolidWorks/Blender 3D modeling and HTML web development,developed AI-powered workflow solutions for business
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Document</h3>
-                <p>
-                Executed full-cycle shipment coordination: from booking (FCL/LCL) to delivery tracking, including container loading plans and warehouse coordination.</br>
-
-Prepared critical trade documents: commercial invoices (CI), proforma invoices (PI), contracts, customs clearance files, and bills of lading.</br>
-
-Optimized cost control through freight forwarder negotiation and expense allocation.</br>
-
-Orchestrated production timelines with factories to meet delivery deadlines, creating optimized cargo manifests based on client priorities and cargo value/volume analysis.
-                </p>
-            </div>
-            <div class="column item item-process" data-aos="fade-up">
-                <h3 class="item-title">Business</h3>
-                <p>
-                ﻿
-Independently oprate 2 full container load (FCL) shipments, overseeing the entire workflow from client inquiry to final delivery.</br>
-Product approval processes: Coordinated product photography, prototype sampling (via international express), and client-specific testing protocols to secure formal product acceptance.</br>
-Executed 3 factory tour campaigns for high-potential clients, translating technical discussions into actionable orders.
-                </p>
-            </div>
-        </div>
-
-
-    </section> <!-- end s-services -->
-
-    <section id="portfolio" class="s-portfolio">
-
-        <div class="row s-porfolio__top">
-            <div class="column large-6 w-900-stack">
-                <div class="section-title" data-num="03" data-aos="fade-up">
-                    <h3 class="h6">Recent Works</h3>
-                </div>
-            </div>
-            <div class="column large-6 w-900-stack">
-                <h1 class="display-1" data-aos="fade-up">
-                    Here are some of package and my hobby I done lately. Feel
-                    free to check them out.
-                </h1>
-            </div>
-        </div> <!-- end s-portfolio__top-->
-
-         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
-
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/1.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img src="images/portfolio/1.jpg" 
-                                 srcset="images/portfolio/1.jpg 1x, images/portfolio/1@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Soft product</div>
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Paper card design and prepare mock up samples</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/2.jpg" title="Music Life" data-size="1050x700">
-                            <img src="images/portfolio/2.jpg" 
-                                 srcset="images/portfolio/2.jpg 1x, images/portfolio/2@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Hard product</div>
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Paper card design and prepare mock up samples</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/3.jpg" Title="OI Logo" data-size="1050x700">
-                            <img src="images/portfolio/oi-logo.jpg.jpg" 
-                                 srcset="images/portfolio/3.jpg 1x, images/portfolio/3@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Broom</div>
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Paper card design and prepare mock up samples</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/4.jpg" title="Corrugated Sheets" data-size="1050x700">
-                            <img src="images/portfolio/4.jpg" 
-                                 srcset="images/portfolio/4.jpg 1x, images/portfolio/4@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Cloth</div>
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Paper card design and prepare mock up samples</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/5.jpg" title="Sand Dunes" data-size="1050x700">
-                            <img src="images/portfolio/woodcraft.jpg" 
-                                 srcset="images/portfolio/5.jpg 1x, images/portfolio/5@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Polishing pad</div>
-                       
-                    </div>
-                   
-                        
-                    </a>
-                    <div class="folio-item__caption">
-                        <p>Paper card design and prepare mock up samples</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/6.jpg" title="The Lamp" data-size="1050x700">
-                            <img src="images/portfolio/6.jpg" 
-                                 srcset="images/portfolio/6.jpg 1x, images/portfolio/6@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        <div class="folio-item__cat">Cloth</div>
-                        
-                    </div>
-                   
-                    <div class="folio-item__caption">
-                        <p>Paper card design and prepare mock up samples</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            
-
-         <div class="row s-portfolio__list block-large-1-2 block-tab-full collapse">
-
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/7.jpg" title="The Red Wheel" data-size="1050x700">
-                            <img src="images/portfolio/1.jpg" 
-                                 srcset="images/portfolio/7.jpg 1x, images/portfolio/7@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Illustration Practice</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/8.jpg" title="Music Life" data-size="1050x700">
-                            <img src="images/portfolio/8.jpg" 
-                                 srcset="images/portfolio/8.jpg 1x, images/portfolio/8@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Illustration Practice</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-            <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/9.jpg" Title="OI Logo" data-size="1050x700">
-                            <img src="images/portfolio/9.jpg" 
-                                 srcset="images/portfolio/9.jpg 1x, images/portfolio/9@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                       
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Illustration Practice</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-             <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/10.jpg" Title="OI Logo" data-size="1050x700">
-                            <img src="images/portfolio/10.jpg" 
-                                 srcset="images/portfolio/10.jpg 1x, images/portfolio/10@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Illustration Practice</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-             <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/11.jpg" Title="OI Logo" data-size="1050x700">
-                            <img src="images/portfolio/11.jpg" 
-                                 srcset="images/portfolio/11.jpg 1x, images/portfolio/11@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Illustration Practice</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-             <div class="column" data-aos="fade-up">
-                <div class="folio-item">
-                    <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="images/portfolio/gallery/12.jpg" Title="OI Logo" data-size="1050x700">
-                            <img src="images/portfolio/12.jpg" 
-                                 srcset="images/portfolio/12.jpg 1x, images/portfolio/12@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="folio-item__info">
-                        
-                        
-                    </div>
-                    
-                    <div class="folio-item__caption">
-                        <p>Illustration Practice</p>
-                    </div>
-                </div>
-            </div> <!-- end column -->
-
-        </div> <!-- folio-list -->
-
-    </section> <!-- end s-portfolio -->
-
-
-   
-
-    <!-- contact
-    ================================================== -->
-    <section class="s-contact">
-     <header class="header">
-            <center>
-                <img src="images/avatars/user-01.png" class="profile-photo" >
-                <h1 style="font-size:2.5em;letter-spacing:1px">May</h1>
-                <div style="margin-top:20px;opacity:0.8">
-                    
-                </div>
-            </center>
         </header>
 
-        <div class="row narrower s-contact__top h-text-center">
-            <div class="column">
-                <h1 class="display-1">
-                18030485860
-                </h1>
-            </div>
-        </div> <!-- s-footer__top -->
+        <!-- Main Content Area -->
+        <main class="flex-grow container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+            <!-- Left Sidebar - Product Categories -->
+            <aside class="w-full md:w-1/4 lg:w-1/5 bg-white rounded-xl shadow-sm overflow-hidden">
+                <div class="p-4 bg-primary text-dark font-bold text-lg flex items-center">
+                    <i class="fa fa-th-list mr-2"></i>Product Categories
+                </div>
+                <nav class="divide-y divide-gray-100">
+                    <a href="#" class="flex items-center p-4 sidebar-item-active" id="camping-cookware">
+                        <i class="fa fa-fire mr-3 text-primary"></i>
+                        <span>Camping Cookware</span>
+                    </a>
+                    <a href="#" class="flex items-center p-4 hover:bg-gray-50 transition-colors" id="water-kettle">
+                        <i class="fa fa-coffee mr-3 text-primary"></i>
+                        <span>Water Kettle</span>
+                    </a>
+                    <a href="#" class="flex items-center p-4 hover:bg-gray-50 transition-colors" id="camping-stove">
+                        <i class="fa fa-burn mr-3 text-primary"></i>
+                        <span>Camping Stove</span>
+                    </a>
+                    <a href="#" class="flex items-center p-4 hover:bg-gray-50 transition-colors" id="led-light">
+                        <i class="fa fa-lightbulb-o mr-3 text-primary"></i>
+                        <span>LED Light</span>
+                    </a>
+                    <a href="#" class="flex items-center p-4 hover:bg-gray-50 transition-colors"
+                        id="folding-table-chair">
+                        <i class="fa fa-table mr-3 text-primary"></i>
+                        <span>Folding Table & Chair</span>
+                    </a>
+                    <a href="#" class="flex items-center p-4 hover:bg-gray-50 transition-colors" id="meeting-faq">
+                        <i class="fa fa-question-circle mr-3 text-primary"></i>
+                        <span>Meeting FAQ</span>
+                    </a>
+                </nav>
+                <div class="p-4 bg-light">
+                    <h3 class="font-medium mb-3">Contact Us</h3>
+                    <p class="text-sm text-gray-600 mb-2">
+                        <i class="fa fa-phone mr-2 text-primary"></i>+86 18030485860
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        <i class="fa fa-envelope mr-2 text-primary"></i>may@kingpool.com
+                    </p>
+                </div>
+            </aside>
 
-       
+            <!-- Right Content - Product List -->
+            <section class="w-full md:w-3/4 lg:w-4/5">
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-2" id="category-title">Camping Cookware</h2>
+                    <p class="text-gray-600" id="category-description">Explore our selection of outdoor cooking
+                        equipment for your camping adventures</p>
+                </div>
 
-    </section>  <!-- end s-contact -->
-
-    <footer class="s-footer">
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    top
-                </a>
-            </div> <!-- end ss-go-top -->
-    </footer>
-    
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
+                <!-- Product List -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="product-grid">
+                    <!-- Product Card 1 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer"
+                            onclick="showProductDetails('CW-C06PRO Camping Cookware Set')">
+                            <img src="img/product3.jpg" alt="CW-C06PRO Camping Cookware Set"
+                                class="w-full h-48 object-cover image-zoom">
+                            <div
+                                class="absolute top-3 left-3 bg-primary text-dark text-xs font-medium px-2 py-1 rounded">
+                                New
                             </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW-C06PRO Camping Cookware Set</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard Anodized
+                                Aluminum,Stainless steel,Contains：3L pot, 1.7L pot, 8 inch fry pan, 0.8L teapot
+                            </p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW-C06PRO Camping Cookware Set')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW-C78 Camping pot set')">
+                            <img src="img/product8.jpg" alt="CW-C78 Camping pot set"
+                                class="w-full h-48 object-cover image-zoom">
+                            <div
+                                class="absolute top-3 left-3 bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">
+                                Hot
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW-C78 Camping pot set</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard Anodized
+                                Aluminum,Stainless steel
+                                Contains：3L pot, 1.7L pot, 8 inch fry pan, 0.8L Kettle</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW-C78 Camping pot set')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW004 Camping Cookset')">
+                            <img src="img/product14.jpg" alt="CW004 Camping Cookset"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW004 Camping Cookset</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminum,
+                                Stainless steel, Silicone Size</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW004 Camping Cookset')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 4 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW-C69-1 Camping Cookware')">
+                            <img src="img/product17.jpg" alt="CW-C69-1 Camping Cookware"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW-C69-1 Camping Cookware</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminum,
+                                Stainless steel, Silicone Size</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW-C69-1 Camping Cookware')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 5 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW015 Aurora 9 pcs set')">
+                            <img src="img/product24.jpg" alt="CW015 Aurora 9 pcs set"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW015 Aurora 9 pcs set</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminum, copper, stainless steel</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW015 Aurora 9 pcs set')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 6 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW-RT05 YOUXI POT')">
+                            <img src="img/product27.jpg" alt="CWRT05 YOUXI POT"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW-RT05 YOUXI POT</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: solid wood, stainless steel,aluminum alloy</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW-RT05 YOUXI POT')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 7 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW-C65:Urban Escaping Cookware Set')">
+                            <img src="img/product32.jpg" alt="CW-C65:Urban Escaping Cookware Set"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW-C65:Urban Escaping Cookware Set</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminum,
+                                Stainless steel, Silicone</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW-C65:Urban Escaping Cookware Set')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 8 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CW-S10-1 Heat Exchanger Pot')">
+                            <img src="img/product38.jpg" alt="CW-S10-1 Heat Exchanger Pott"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW-S10-1 Heat Exchanger Pot</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminum,
+                                Tritan,Stainless steel, PP</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW-S10-1 Heat Exchanger Pot')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+					<!-- Product Card 9 - Camping Cookware -->
+					<div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+					    <div class="relative cursor-pointer" onclick="showProductDetails('CW200 Stainless steel set of 4 pots and pans')">
+					        <img src="img/product57.jpg" alt="CW200 Stainless steel set of 4 pots and pans"
+					            class="w-full h-48 object-cover image-zoom">
+					    </div>
+					    <div class="p-4">
+					        <h3 class="font-bold text-lg mb-2">CW200 Stainless steel set of 4 pots and pans</h3>
+					        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Body: 304 stianless steel,Handle: 201 stianless steel</p>
+					        <button
+					            class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+					            onclick="showProductDetails('CW200 Stainless steel set of 4 pots and pans')">
+					            View Details
+					        </button>
+					    </div>
+					</div>
+                    <!-- Product Card 10 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('JETBOIL'S SAMPLE')">
+                            <img src="img/product40.jpg" alt="JETBOIL'S SAMPLE"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">JETBOIL'S SAMPLE</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">See Samples</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('JETBOIL'S SAMPLE')">
+                                Only Samples
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Product Card 11 - Camping Cookware -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-cookware">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('ALOCS’S  PICTURES')">
+                            <img src="img/product41.jpg" alt="ALOCS’S  PICTURES"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">ALOCS’S  PICTURES</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">See Pictures</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('ALOCS’S  PICTURES')">
+                                Only Pictures
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Water Kettle Products -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="water-kettle">
+                        <div class="relative cursor-pointer"
+                            onclick="showProductDetails('CW198 Silicone Kettle')">
+                            <img src="img/product42.jpg" alt="CW198 Silicone Kettle"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CW198 Silicone Kettle</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Body: silicone+304 S.S,Lid: Tritan</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CW198 Silicone Kettle')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="water-kettle">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('CB080 KETTLE KIT')">
+                            <img src="img/product47.jpg" alt="CB080 KETTLE KIT"
+                                class="w-full h-48 object-cover image-zoom">
+                            <div
+                                class="absolute top-3 left-3 bg-primary text-dark text-xs font-medium px-2 py-1 rounded">
+                                New
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">CB080 KETTLE KIT</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminium，1-2PERSONS COOKWARE</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('CB080 KETTLE KIT')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+					<div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="water-kettle">
+					    <div class="relative cursor-pointer" onclick="showProductDetails('CB081 KETTLE KIT')">
+					        <img src="img/product82.jpg" alt="CB081 KETTLE KIT"
+					            class="w-full h-48 object-cover image-zoom">
+					        <div
+					            class="absolute top-3 left-3 bg-primary text-dark text-xs font-medium px-2 py-1 rounded">
+					            New
+					        </div>
+					    </div>
+					    <div class="p-4">
+					        <h3 class="font-bold text-lg mb-2">CB081 KETTLE KIT</h3>
+					        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Hard anodized aluminium, stainless steel, silicone</p>
+					        <button
+					            class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+					            onclick="showProductDetails('CB081 KETTLE KIT')">
+					            View Details
+					        </button>
+					    </div>
+					</div>
+
+                    <!-- Camping Stove Products -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-stove">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('SG003 Gas Stove')">
+                            <img src="img/product52.jpg" alt="SG003 Gas Stove"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">SG003 Gas Stove</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Stainless steel, aluminum Power: 3200W </p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('SG003 Gas Stove')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-stove">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('SG007 Magician Camp Stove')">
+                            <img src="img/product62.jpg" alt="SG007 Magician Camp Stove"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">SG007 Magician Camp Stove</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Stainless steel, aluminum, copper</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('SG007 Magician Camp Stove')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+					<div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-stove">
+					    <div class="relative cursor-pointer" onclick="showProductDetails('SG005 Foldable Camp Stove')">
+					        <img src="img/product66.jpg" alt="SG005 Foldable Camp Stove"
+					            class="w-full h-48 object-cover image-zoom">
+					    </div>
+					    <div class="p-4">
+					        <h3 class="font-bold text-lg mb-2">SG005 Foldable Camp Stove</h3>
+					        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Stainless steel, aluminum, copper</p>
+					        <button
+					            class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+					            onclick="showProductDetails('SG005 Foldable Camp Stove')">
+					            View Details
+					        </button>
+					    </div>
+					</div>
+					<div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-stove">
+					    <div class="relative cursor-pointer" onclick="showProductDetails('SG006 Foldable Camp Stove')">
+					        <img src="img/product72.jpg" alt="SG006 Foldable Camp Stove"
+					            class="w-full h-48 object-cover image-zoom">
+					    </div>
+					    <div class="p-4">
+					        <h3 class="font-bold text-lg mb-2">SG006 Foldable Camp Stove</h3>
+					        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: Stainless steel, Aluminum, Copper</p>
+					        <button
+					            class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+					            onclick="showProductDetails('SG006 Foldable Camp Stove')">
+					            View Details
+					        </button>
+					    </div>
+					</div>
+					<div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-stove">
+					    <div class="relative cursor-pointer" onclick="showProductDetails('CS- G30 Heating stove')">
+					        <img src="img/product77.jpg" alt="CS- G30 Heating stove"
+					            class="w-full h-48 object-cover image-zoom">
+					    </div>
+					    <div class="p-4">
+					        <h3 class="font-bold text-lg mb-2">CS- G30 Heating stove</h3>
+					        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Handle Material: Silicone + Stainless Stee</p>
+					        <button
+					            class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+					            onclick="showProductDetails('CS- G30 Heating stove')">
+					            View Details
+					        </button>
+					    </div>
+					</div>
+					<div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="camping-stove">
+					    <div class="relative cursor-pointer" onclick="showProductDetails('SG022 Protable Stove')">
+					        <img src="img/product87.jpg" alt="SG022 Protable Stove"
+					            class="w-full h-48 object-cover image-zoom">
+					    </div>
+					    <div class="p-4">
+					        <h3 class="font-bold text-lg mb-2">SG022 Protable Stove</h3>
+					        <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material:0.4mm coldplate and rion body</p>
+					        <button
+					            class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+					            onclick="showProductDetails('SG022 Protable Stove')">
+					            View Details
+					        </button>
+					    </div>
+					</div>
+
+                    <!-- LED Light Products -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="led-light">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('FC080 Camping lighting')">
+                            <img src="img/product92.jpg" alt="FC080 Camping lighting"
+                                class="w-full h-48 object-cover image-zoom">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">FC080 Camping lighting</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: ABS+Iron</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('FC080 Camping lighting')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="led-light">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('FC088-89 Camping light')">
+                            <img src="img/product97.jpg" alt="FC088-89 Camping light"
+                                class="w-full h-48 object-cover image-zoom">
+                            <div
+                                class="absolute top-3 left-3 bg-green-500 text-white text-xs font-medium px-2 py-1 rounded">
+                                Special Offer
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">FC088-89 Camping light</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Material: ABS +PS+AS</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('FC088-89 Camping light')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Folding Table & Chair Products -->
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="folding-table-chair">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('Compact Folding Table')">
+                            <img src="https://picsum.photos/seed/table1/600/400" alt="Compact Folding Table"
+                                class="w-full h-48 object-cover image-zoom">
+                            <div
+                                class="absolute top-3 left-3 bg-primary text-dark text-xs font-medium px-2 py-1 rounded">
+                                New
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">Compact Folding Table</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Lightweight aluminum folding table that
+                                supports up to 100kg, perfect for camping meals and games.</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('Compact Folding Table')">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white rounded-xl shadow-sm overflow-hidden card-hover" data-category="folding-table-chair">
+                        <div class="relative cursor-pointer" onclick="showProductDetails('Outdoor Folding Chair')">
+                            <img src="https://picsum.photos/seed/chair1/600/400" alt="Outdoor Folding Chair"
+                                class="w-full h-48 object-cover image-zoom">
+                            <div
+                                class="absolute top-3 left-3 bg-red-500 text-white text-xs font-medium px-2 py-1 rounded">
+                                Hot
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-bold text-lg mb-2">Outdoor Folding Chair</h3>
+                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Comfortable camping chair with breathable
+                                mesh back, cup holder, and compact folding design.</p>
+                            <button
+                                class="w-full bg-primary hover:bg-primary/90 text-dark font-medium py-2 rounded-lg transition-colors"
+                                onclick="showProductDetails('Outdoor Folding Chair')">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+
+                <!-- FAQ Content -->
+                <div id="faq-content" class="hidden bg-white rounded-xl shadow-sm p-6 space-y-4">
+                    <h2 class="text-2xl font-bold mb-2 text-center">Meeting FAQ</h2>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            What are your business hours?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">Our office is open Monday through Friday from 9:00 AM to 5:00 PM
+                                (GMT+8). We are closed on weekends and public holidays.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            How long has your company been in business?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">We established our company in 2010 and have been specializing in
+                                outdoor equipment manufacturing and supply for over 13 years.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            Do you offer product customization?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">Yes, we offer customization services for most of our products. This
+                                includes color options, material variations, and functional modifications based on your
+                                requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            What is your minimum order quantity?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">Our minimum order quantity varies by product. For most items, it
+                                ranges from 50 to 500 units. Please contact our sales team for specific MOQ information
+                                on products you're interested in.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            Do you provide samples?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">Yes, we can provide samples for most products. There may be a small
+                                fee for samples which can be credited toward your first order. Shipping costs for
+                                samples are typically the responsibility of the customer.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            What payment methods do you accept?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">We accept various payment methods including T/T (Telegraphic
+                                Transfer), Western Union, PayPal, and Alibaba's Escrow service. For large orders, we
+                                typically request 30% deposit with the balance due before shipment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            How do you ensure product quality?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">We maintain strict quality control processes throughout production.
+                                This includes raw material inspection, in-process quality checks, and final product
+                                testing. We also offer a 1-year warranty on most products against manufacturing defects.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="text-lg font-medium cursor-pointer select-none mb-2" onclick="toggleAccordion(this)">
+                            <i class="fa fa-plus-circle text-primary mr-2 accordion-icon"></i>
+                            What are your shipping methods?
+                        </h3>
+                        <div class="accordion-content hidden">
+                            <p class="text-gray-600">We ship via various methods including DHL, FedEx, UPS, and sea
+                                freight. The shipping method depends on the quantity ordered and your specific
+                                requirements. We'll provide shipping quotes based on your order volume and destination.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-6 mt-12">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-xl font-bold">Kingpool Outdoors</h2>
+                <p class="text-gray-400 text-sm mt-2">Professional Outdoor Equipment Supplier</p>
+            </div>
+        </footer>
+
+        <!-- Product Details Modal -->
+        <div id="product-modal"
+            class="fixed inset-0 bg-black/50 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+            <div class="bg-white rounded-xl shadow-xl max-w-4xl w-full max-h-[90vh] overflow-auto m-4 transform transition-all duration-300 scale-95 opacity-0"
+                id="modal-content">
+                <div class="p-6 border-b border-gray-100 flex justify-between items-center">
+                    <h3 class="text-xl font-bold" id="modal-title">Product Details</h3>
+                    <button id="close-modal" class="text-gray-400 hover:text-gray-600 transition-colors">
+                        <i class="fa fa-times text-xl"></i>
+                    </button>
+                </div>
+                <div class="p-6" id="modal-body">
+                    <!-- Product details content will be loaded dynamically by JavaScript -->
+                </div>
+                <div class="p-6 border-t border-gray-100 flex justify-end">
+                    <button id="close-modal-btn"
+                        class="bg-gray-200 hover:bg-gray-300 text-dark font-medium py-2 px-6 rounded-lg transition-colors"
+                        onclick="closeModalFunc()">
+                        Close
+                    </button>
                 </div>
             </div>
-
         </div>
 
-    </div> <!-- end photoSwipe background -->
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="fixed bottom-5 right-5 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:bg-primary/90 hover:scale-105 hidden">
+            <i class="fa fa-arrow-up"></i>
+        </button>
 
+        <script>
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const sidebar = document.querySelector('aside');
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    sidebar.classList.toggle('hidden');
+                    sidebar.classList.toggle('md:block');
+                });
+            }
 
-</body>
+            // Product details modal
+            const productModal = document.getElementById('product-modal');
+            const modalContent = document.getElementById('modal-content');
+            const closeModal = document.getElementById('close-modal');
+            const closeModalBtn = document.getElementById('close-modal-btn');
 
+            // Product data for all categories
+            const products = {
+                // Camping Cookware
+                'CW-C06PRO Camping Cookware Set': {
+                    name: 'CW-C06PRO Camping Cookware Set',
+                    image: 'img/product1.jpg',
+                    description: 'Multi-scenario applicable,suitable for frying,stir-frying,deep-frying,boiling water and other cooking methods.',
+                    specs: [
+                        'Material: Hard Anodized Aluminum,Stainless steel',
+                        'Specification: Weight:1100g;G.W:17.8kg',
+                        'Surface treatment: non-stick coating for the frypan, others hard anodized',
+                        'Package: Brown Box,Storbage size: 215*215*155mm',
+                        'Contains：3L pot, 1.7L pot, 8 inch fry pan, 0.8L teapot'
+                    ],
+                    images: [
+                        'img/product1.jpg',
+                        'img/product2.jpg',
+                        'img/product3.jpg',
+                        'img/product4.jpg'
+                    ]
+                },
+                'CW-C78 Camping pot set': {
+                    name: 'CW-C78 Camping pot set',
+                    image: 'img/product6.jpg',
+                    description: 'Food grade material,health and safety,the material is hard and more resistant to burning.',
+                    specs: [
+                        'Material: Hard Anodized Aluminum,Stainless steel',
+                        'Specification: Weight:630g,G.W:17.8kg',
+                        'Package: Color Box,210*210*140mm',
+                        'Contains：3L pot, 1.7L pot, 8 inch fry pan, 0.8L Kettle'
+                    ],
+                    images: [
+                        'img/product6.jpg',
+                        'img/product7.jpg',
+                        'img/product8.jpg',
+                        'img/product9.jpg'
+                    ]
+                },
+                'CW004 Camping Cookset': {
+                    name: 'CW004 Camping Cookset',
+                    image: 'img/product11.jpg',
+                    description: 'Kingpool camping “outdoor” hard anodized aluminum cookwareSuitable for 1-2 persons',
+                    specs: [
+                        'Material: Hard anodized aluminum, Stainless steel, Silicone Size ',
+                        'Specification: N.W/G.W: 9.5/10.5kg,Suitable: 1-2 persons',
+                        'Package: Polybag-mesh bag-color box,110x110x150mm',
+                        'Contains： 0.5L pot, 225ml bow/lid, 2 pcs 400ml bowl '
+                    ],
+                    images: [
+                        'img/product11.jpg',
+                        'img/product12.jpg',
+                        'img/product13.jpg',
+                        'img/product14.jpg'
+                    ],	
+                },
+                'CW-C69-1 Camping Cookware': {
+                    name: 'CW-C69-1 Camping Cookware',
+                    image: 'img/product15.jpg',
+                    description: 'Square appearance,chic and beautiful,suitcase design concept',
+                    specs: [
+                        'Material: 304 Stainless Steel ',
+                        'Specification: Weight: 960g;G.W:12kg; Pot: 167*167*68mm Kettle: 157*157*75mm Frypan:180*180*30mm',
+                        'Package: Brown Box',
+                        'Contains：1.7L pot; 1.0L kettle：304 Stainless Steel; 7" frypan：Aluminum '
+                    ],
+                    images: [
+                        'img/product16.jpg',
+                        'img/product17.jpg',
+                        'img/product18.jpg',
+                        'img/product19.jpg'
+                    ],	
+                },
+                'CW015 Aurora 9 pcs set': {
+                    name: 'CW015 Aurora 9 pcs set',
+                    image: 'img/product20.jpg',
+                    description: 'Accredited by Europe and the United States food safety standards,such as CE、LFGB and FDA, and ensure the health and safety',
+                    specs: [
+                        'Material: Hard anodized aluminum, copper, stainless steel',
+                        'Contains: 1.7L and 1.4L pots, 7.5, fry pan',
+                        'Applicable: 3-4 people',
+						'Packaging: Polybag-mesh bag-color box',
+                        'N.W/G.W: 14/15kg',
+                        'CTN: 12sets/66.5x23.5x44.5cm'
+                    ],
+                    images: [
+                        'img/product21.jpg',
+                        'img/product22.jpg',
+                        'img/product23.jpg',
+                        'img/product24.jpg'
+                    ]
+                },
+				'CW-RT05 YOUXI POT': {
+				    name: 'CW-RT05 YOUXI POT',
+				    image: 'img/product25.jpg',
+				    description: 'Our durable outdoor tableware set is designed for long-lasting use in outdoor environments. Lightweight yet sturdy, it\'s the perfect companion for any outdoor adventure.',
+				    specs: [
+				        'Material: solid wood, stainless steel,aluminum alloy',
+				        'Capacity: 1.3L',
+				        'Applicable: 2-3 people',
+				        'Net weight: about 1020g',
+				        'Size: 105x225mm'
+				    ],
+				    images: [
+				        'img/product26.jpg',
+				        'img/product27.jpg',
+				        'img/product28.jpg',
+				        'img/product29.jpg'
+				    ]
+				},
+				'CW-C65:Urban Escaping Cookware Set': {
+				    name: 'CW-C65:Urban Escaping Cookware SetT',
+				    image: 'img/product30.jpg',
+				    description: 'Our durable outdoor cookware set is designed for long-lasting use in outdoor environments. Lightweight yet sturdy, it‘s the perfect companion for any outdoor adventure.',
+				    specs: [
+				        'Material: solid wood, stainless steel,aluminum alloy',
+				        'Capacity: 1.3L',
+				        'Applicable: 2-3 people',
+				        'Net weight: about 1020g',
+				        'Size: 105x225mm'
+				    ],
+				    images: [
+				        'img/product31.jpg',
+				        'img/product32.jpg',
+				        'img/product33.jpg',
+				        'img/product34.jpg'
+				    ]
+				},
+				'CW-S10-1 Heat Exchanger Pot': {
+				    name: 'CW-S10-1 Heat Exchanger Pot',
+				    image: 'img/product35.jpg',
+				    description: 'Energy-conentrating ring lock:Improves combustion efficiency',
+				    specs: [
+				        'Material: Hard anodized aluminum,Tritan,Stainless steel, PP',
+				        'Product size:148XH125mm',
+				        'Weight:320g',
+				        'Size: 105x225mm'
+				    ],
+				    images: [
+				        'img/product36.jpg',
+				        'img/product37.jpg',
+				        'img/product38.jpg',
+				        'img/product39.jpg'
+				    ]
+				},
+				'CW200 Stainless steel set of 4 pots and pans': {
+				    name: 'CW200 Stainless steel set of 4 pots and pans',
+				    image: 'img/product57.jpg',
+				    description: 'Our durable cookware set.',
+				    specs: [
+				        'Material: Body: 304 stianless steel Handle: 201 stianless steel,Frypan surface treatment: Non-stick',
+				        'Product size:1.6L pot: 170x90mm 2.0L pot: 195x97mm 4.5L pot: 230x130mm 1.8L frypan: 230x55mm',
+				        'Weight:2.2kg',
+				        'Size: 105x225mm'
+				    ],
+				    images: [
+				        'img/product58.jpg',
+				        'img/product59.jpg',
+				        'img/product60.jpg',
+				        'img/product61.jpg'
+				    ]
+				},
+
+                // Water Kettle
+                'CW198 Silicone Kettle': {
+                    name: 'CW198 Silicone Kettle',
+                    image: 'img/product42.jpg',
+                    description: 'Durable stainless steel construction with rapid heating technology and secure locking lid. Perfect for camping trips and outdoor adventures.',
+                    specs: [
+                        'Material: Body: silicone+304 S.S,Lid: Tritan',
+                        'Product size:Foldable size: 15x15x5.8cm ,Unfoldable size: 15x15x9.5cm',
+                        'Weight:245g,G.W:9.4KG',
+                        'CTN:36sets/46.5*31.5*37CM'
+                    ],
+                    images: [
+                        'img/product43.jpg',
+                        'img/product44.jpg',
+                        'img/product45.jpg',
+                        'img/product46.jpg'
+                    ]
+                },
+				'CB080 KETTLE KIT': {
+				    name: 'CB080 KETTLE KIT',
+				    image: 'img/product47.jpg',
+				    description: 'Hard anodized aluminium',
+				    specs: [
+				        'Material: Hard anodized aluminium, stainless steel, silicone',
+				        'Suit.bl.: 1-2 person',
+				        'Size pack: 40x90mm',
+				        'P.ckaging: bag-mesh bag olor box ',
+				        'CTN: 12sets/33x32x33cm  '
+				    ],
+				    images: [
+				        'img/product48.jpg',
+				        'img/product49.jpg',
+				        'img/product50.jpg',
+				        'img/product51.jpg'
+				    ]
+				},
+                'CB081 KETTLE KIT': {
+                    name: 'CB081 KETTLE KIT',
+                    image: 'img/product82.jpg',
+                    description: 'Food grade material. All in one pack, ultra-light, easy to carry. Hardanodized surface treatment makes it scrape resistance and corrosion resistance. Innovative bionic design of shark fin on the lid.',
+                    specs: [
+                        'Material: Hard anodized aluminium, stainless steel, silicone',
+                        'Contains: 1.3L kettle, Spirit burner with stand,Suitable: 1-2 persons',
+                        'Size pack: 160x110x160mm',
+                        'P.ckaging: pp bag-mesh bag-color box',
+                        'CTN: 12sets/33x32x33cm '
+                    ],
+                    images: [
+                        'img/product83.jpg',
+                        'img/product84.jpg',
+                        'img/product85.jpg',
+                        'img/product86.jpg'
+                    ]
+                },
+
+                // Camping Stove
+                'SG003 Gas Stove': {
+                    name: 'SG003 Gas Stove',
+                    image: 'img/product52.jpg',
+                    description: 'Compact design with powerful burner output, piezo ignition, and folding legs for portability. Perfect for backpacking and day trips.',
+                    specs: [
+                        'Fuel Type: Butane/Propane gas cartridges',
+                        'Burner Output: 3,000W',
+                        'Weight: 350g',
+                        'Folded Dimensions: 100mm x 100mm x 40mm',
+                        'Features: Piezo ignition, windscreen compatible, folding legs'
+                    ],
+                    images: [
+                        'img/product53.jpg',
+                        'img/product54.jpg',
+                        'img/product55.jpg',
+                        'img/product56.jpg'
+                    ]
+                },
+                'SG007 Magician Camp Stove': {
+                    name: 'SG007 Magician Camp Stove',
+                    image: 'img/product62.jpg',
+                    description: 'Magician Camp Stove',
+                    specs: [
+                        'Material:Stainless steel, aluminum, copper',
+                        'Power: 3000W,Net weight: 210g',
+                        'Folded Size: 105x95x60mm',
+                        'Unfolded Size: D136x93mm',
+                        'Package: Mes Bag+ Color Box'
+                    ],
+                    images: [
+                        'img/product63.jpg',
+                        'img/product64.jpg',
+                        'img/product65.jpg',
+                        'img/product66.jpg'
+                    ]
+                },
+				'SG005 Foldable Camp Stove': {
+				    name: 'SG005 Foldable Camp Stove',
+				    image: 'img/product66.jpg',
+				    description: 'Foldable Camp Stove',
+				    specs: [
+				        'Material:Stainless steel, aluminum, copper',
+				        'Power: 2800W,Net weight: 82g',
+				        'Folded Size: 73x73mm',
+				        'Unfolded Size: 118x78mm',
+				        'Package: bag+carton'
+				    ],
+				    images: [
+				        'img/product67.jpg',
+				        'img/product68.jpg',
+				        'img/product69.jpg',
+				        'img/product70.jpg'
+				    ]
+				},
+				'SG006 Foldable Camp Stove': {
+				    name: 'SG006 Foldable Camp Stove',
+				    image: 'img/product72.jpg',
+				    description: 'Foldable Camp Stove',
+				    specs: [
+				        'Material:Stainless steel, Aluminum, Copper',
+				        'Power: 3000W,weight: 205g',
+				        'Folded Size: 105x95x60mm',
+				        'Unfolded Size: D136xH93mm',
+				        'Package: bag+carton'
+				    ],
+				    images: [
+				        'img/product73.jpg',
+				        'img/product74.jpg',
+				        'img/product75.jpg',
+				        'img/product76.jpg'
+				    ]
+				},
+				'CS- G30 Heating stove': {
+				    name: 'CS- G30 Heating stove',
+				    image: 'img/product77.jpg',
+				    description: 'Heating / Cooking / Keeping Warm',
+				    specs: [
+				        'Handle Material: Silicone + Stainless Steel',
+				        'Power: 1500w,Heating Area: 8-12m²',
+				        'Weight: 1.4kg (excluding the base plate)',
+				        'Base Plate Weight: 94g',
+				        'Stepless adjustment: √ Overpressure Protection: √'
+				    ],
+				    images: [
+				        'img/product78.jpg',
+				        'img/product79.jpg',
+				        'img/product80.jpg',
+				        'img/product81.jpg'
+				    ]
+				},
+				'SG022 Protable Stove': {
+				    name: 'SG022 Protable Stove',
+				    image: 'img/product87.jpg',
+				    description: 'Enamel stove frame/Aluminium burner',
+				    specs: [
+				        'Material:0.4mm coldplate and rion body',
+				        'Size:34X27.5X11cm',
+				        'N.W:1.55kg/G.W:1.95kg',
+				        'Power：2.1Kw',
+				        'Kind of gas:Butane(small gas catrige)',
+				        'CTN:4pcs/66.6X45X30cm'
+				    ],
+				    images: [
+				        'img/product88.jpg',
+				        'img/product89.jpg',
+				        'img/product90.jpg',
+				        'img/product91.jpg'
+				    ]
+				},
+				
+
+                // LED Light
+                'FC080 Camping lighting': {
+                    name: 'FC080 Camping lighting',
+                    image: 'img/product92.jpg',
+                    description: 'Camping lighting',
+                    specs: [
+                        'Material:ABS+Iron,Waterproof: IPX4',
+                        'Size: 93x104mm,Mode: Warm - white - all',
+                        'Battery: 1200mAh Li battery,Lumen: 200lm,Distance: 5m',
+                        'Weight: 140g,Burn time: 5-40H',
+                        'LED type: 3*tungsten led+3*SMD'
+                    ],
+                    images: [
+                        'img/product93.jpg',
+                        'img/product94.jpg',
+                        'img/product95.jpg',
+                        'img/product96.jpg'
+                    ]
+                },
+                'FC088-89 Camping light': {
+                    name: 'FC088-89 Camping light',
+                    image: 'img/product97.jpg',
+                    description: '10m warm strip run 12hrs, inside 22 pcs 2835 run 7 hrs,charger need 5 hrs with 5V,1A type',
+                    specs: [
+                        'Material: ABS +PS+AS,Brightness: 200lm',
+                        'Size: 117x117x40mm',
+                        'Weight: 230g,Waterproof: IPX4',
+                        'Battery: 1 pc 1800 mAh lithium battery',
+                        'Features: Multiple lighting modes, adjustable strap, durable construction, water-resistant'
+                    ],
+                    images: [
+                        'img/product98.jpg',
+                        'img/product99.jpg',
+                        'img/product100.jpg',
+                        'img/product101.jpg'
+                    ]
+                },
+
+                // Folding Table & Chair
+                'Compact Folding Table': {
+                    name: 'Compact Folding Table',
+                    image: 'https://picsum.photos/seed/table1/800/600',
+                    description: 'Lightweight aluminum folding table that supports up to 100kg, perfect for camping meals and games. Folds compactly for easy transport.',
+                    specs: [
+                        'Material: Aluminum alloy',
+                        'Weight: 1.8kg',
+                        'Open Dimensions: 600mm x 400mm x 450mm',
+                        'Folded Dimensions: 600mm x 100mm x 60mm',
+                        'Features: Supports up to 100kg, weather-resistant surface, compact folding design'
+                    ],
+                    images: [
+                        'https://picsum.photos/seed/table1/600/400',
+                        'https://picsum.photos/seed/table1-1/600/400',
+                        'https://picsum.photos/seed/table1-2/600/400',
+                        'https://picsum.photos/seed/table1-3/600/400'
+                    ]
+                },
+                'Outdoor Folding Chair': {
+                    name: 'Outdoor Folding Chair',
+                    image: 'https://picsum.photos/seed/chair1/800/600',
+                    description: 'Comfortable camping chair with breathable mesh back, cup holder, and compact folding design. Perfect for relaxation at the campsite.',
+                    specs: [
+                        'Material: Steel frame with polyester mesh',
+                        'Weight: 1.2kg',
+                        'Dimensions: 550mm x 500mm x 700mm',
+                        'Folded Dimensions: 550mm x 150mm x 150mm',
+                        'Features: Breathable mesh back, cup holder, compact folding design, carry bag included'
+                    ],
+                    images: [
+                        'https://picsum.photos/seed/chair1/600/400',
+                        'https://picsum.photos/seed/chair1-1/600/400',
+                        'https://picsum.photos/seed/chair1-2/600/400',
+                        'https://picsum.photos/seed/chair1-3/600/400'
+                    ]
+                }
+            };
+
+            // Show product details
+            function showProductDetails(productName) {
+                const product = products[productName];
+                if (!product) return;
+
+                // Update modal title
+                document.getElementById('modal-title').textContent = product.name;
+
+                // Build product details content
+                const modalBody = document.getElementById('modal-body');
+                modalBody.innerHTML = `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="relative">
+                            <img src="${product.image}" alt="${product.name}" class="w-full h-auto rounded-lg shadow-sm cursor-zoom-in" id="main-product-image">
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black/30 rounded-lg">
+                                <button class="bg-white text-dark rounded-full p-3 shadow-lg transform transition-transform hover:scale-110">
+                                    <i class="fa fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-4 gap-2 mt-4">
+                            ${product.images.map((img, index) => `
+                                <div class="cursor-pointer border-2 ${index === 0 ? 'border-primary' : 'border-transparent'} rounded-lg overflow-hidden hover:border-primary transition-colors" onclick="changeMainImage('${img}', this)">
+                                    <img src="${img}" alt="${product.name} image" class="w-full h-20 object-cover">
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold mb-4">${product.name}</h4>
+                        <p class="text-gray-600 mb-6">${product.description}</p>
+                        <div class="bg-light p-4 rounded-lg mb-6">
+                            <h5 class="font-medium mb-3">Product Specifications</h5>
+                            <ul class="space-y-2">
+                                ${product.specs.map(spec => `
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
+                                        <span>${spec}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+                // Show modal
+                productModal.classList.remove('hidden');
+                setTimeout(() => {
+                    productModal.classList.add('opacity-100');
+                    modalContent.classList.remove('scale-95', 'opacity-0');
+                    modalContent.classList.add('scale-100', 'opacity-100');
+                }, 10);
+
+                // Prevent page scrolling
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Change main product image
+            function changeMainImage(imageUrl, thumbnail) {
+                // Update main image
+                document.getElementById('main-product-image').src = imageUrl;
+
+                // Update active thumbnail border
+                document.querySelectorAll('#modal-body .grid-cols-4 > div').forEach(item => {
+                    item.classList.remove('border-primary');
+                    item.classList.add('border-transparent');
+                });
+                thumbnail.classList.remove('border-transparent');
+                thumbnail.classList.add('border-primary');
+            }
+
+            // Close modal
+            function closeModalFunc() {
+                productModal.classList.remove('opacity-100');
+                modalContent.classList.remove('scale-100', 'opacity-100');
+                modalContent.classList.add('scale-95', 'opacity-0');
+
+                setTimeout(() => {
+                    productModal.classList.add('hidden');
+                    // Restore page scrolling
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+
+            // Add close event listeners
+            closeModal.addEventListener('click', closeModalFunc);
+            closeModalBtn.addEventListener('click', closeModalFunc);
+            productModal.addEventListener('click', function(e) {
+                if (e.target === productModal) {
+                    closeModalFunc();
+                }
+            });
+
+            // Close modal with ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !productModal.classList.contains('hidden')) {
+                    closeModalFunc();
+                }
+            });
+
+            // Category switching functionality
+            const categories = {
+                'camping-cookware': {
+                    title: 'Camping Cookware',
+                    description: 'Explore our selection of outdoor cooking equipment for your camping adventures'
+                },
+                'water-kettle': {
+                    title: 'Water Kettle',
+                    description: 'High-quality camping kettles designed for efficient water boiling in outdoor environments'
+                },
+                'camping-stove': {
+                    title: 'Camping Stove',
+                    description: 'Versatile and reliable stoves for all your outdoor cooking needs'
+                },
+                'led-light': {
+                    title: 'LED Light',
+                    description: 'Bright and durable lighting solutions for your campsite'
+                },
+                'folding-table-chair': {
+                    title: 'Folding Table & Chair',
+                    description: 'Comfortable and practical furniture for your outdoor adventures'
+                }
+            };
+
+            // Initialize category display
+            function initCategoryDisplay() {
+                const categoryLinks = document.querySelectorAll(
+                    '#camping-cookware, #water-kettle, #camping-stove, #led-light, #folding-table-chair, #meeting-faq');
+
+                categoryLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+
+                        // Remove active class from all links
+                        categoryLinks.forEach(l => l.classList.remove('sidebar-item-active'));
+
+                        // Add active class to clicked link
+                        this.classList.add('sidebar-item-active');
+
+                        if (this.id === 'meeting-faq') {
+                            // Show FAQ content
+                            document.getElementById('product-grid').classList.add('hidden');
+                            document.getElementById('faq-content').classList.remove('hidden');
+                            document.getElementById('category-title').textContent = 'Meeting FAQ';
+                            document.getElementById('category-description').textContent =
+                                'Find answers to common questions about our company and products';
+                        } else {
+                            // Get category id from link id
+                            const categoryId = this.id;
+
+                            // Update category title and description
+                            document.getElementById('category-title').textContent = categories[categoryId].title;
+                            document.getElementById('category-description').textContent = categories[categoryId]
+                                .description;
+
+                            // Hide FAQ content
+                            document.getElementById('faq-content').classList.add('hidden');
+
+                            // Hide all product cards
+                            const allProductCards = document.querySelectorAll('.product-card');
+                            allProductCards.forEach(card => card.classList.add('hidden'));
+
+                            // Show product cards for the selected category
+                            const categoryCards = document.querySelectorAll(`.product-card[data-category="${categoryId}"]`);
+                            categoryCards.forEach(card => card.classList.remove('hidden'));
+
+                            // Show product grid
+                            document.getElementById('product-grid').classList.remove('hidden');
+                        }
+                    });
+                });
+            }
+
+            // Function to toggle accordion
+            function toggleAccordion(element) {
+                const content = element.nextElementSibling;
+                const icon = element.querySelector('.accordion-icon');
+
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.remove('fa-plus-circle');
+                    icon.classList.add('fa-minus-circle');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('fa-minus-circle');
+                    icon.classList.add('fa-plus-circle');
+                }
+            }
+
+            // Back to top button functionality
+            const backToTopButton = document.getElementById('back-to-top');
+
+            // Function to toggle button visibility
+            function toggleBackToTopButton() {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.remove('hidden');
+                } else {
+                    backToTopButton.classList.add('hidden');
+                }
+            }
+
+            // Initial check
+            toggleBackToTopButton();
+
+            // Listen for scroll events
+            window.addEventListener('scroll', toggleBackToTopButton);
+
+            // Scroll to top on button click
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Initialize the category display when page loads
+            document.addEventListener('DOMContentLoaded', initCategoryDisplay);
+        </script>
+    </body>
 </html>
